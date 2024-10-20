@@ -98,7 +98,6 @@ public class MainClass {
 
     public static void main (String [] args)
     {
-        Console console = System.console();
         if (args.length != 2 || !(args[0].equals("encode") || args[0].equals("decode"))) {
             System.out.println("Usage: <encode/decode> <input>");
             return;
