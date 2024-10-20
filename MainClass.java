@@ -100,14 +100,15 @@ public class MainClass {
     {
         Console console = System.console();
         if (args.length != 2 || !(args[0].equals("encode") || args[0].equals("decode"))) {
-            console.println("Usage: <encode/decode> <input>");
+            System.out.println("Usage: <encode/decode> <input>");
+            return;
         }
         String result = null;
         if (args[0].equals("encode"))
             result = encode(args[1]);
         else
             result = decode(args[1]);
-        console.println(result);
+        System.out.println(result);
     }
 
 }
