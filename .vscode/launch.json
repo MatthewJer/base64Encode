@@ -9,7 +9,7 @@
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}",
-            "args": "decode SGFsbG8gV2VsdA=="
+            "args": "decode RGFzIGlzdCBlaW4gc3VwZXIgVGVzdGphdmEgTWFpbmNsYXNzIGVuY29kZSAhISE="
         },
         {
             "type": "java",

@@ -71,7 +71,7 @@ public class MainClass {
             firstByte += (secondCharIndex & 0b00110000) >> 4;
             byte secondByte = (byte)((secondCharIndex & 0b00001111) << 4);
             byte thirdByte = 0;
-            if (chunk.length > 2 && chunk[3] != '=') {
+            if (chunk.length > 2 && chunk[2] != '=') {
                 int thirdCharIndex = base64Chars.indexOf(chunk[2]);
                 secondByte += (byte)((thirdCharIndex & 0b00111100) >> 2);
                 if (chunk.length > 3 && chunk[3] != '=') {
